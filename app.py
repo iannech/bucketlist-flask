@@ -13,6 +13,9 @@ def showSignUp():
 def showSignIn():
 	return render_template('signin.html')
 
+@app.route('/userHome')
+def userHome():
+	return render_template('userHome.html')
 
 if __name__ == '__main__':
 	app.run()
