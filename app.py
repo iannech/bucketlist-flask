@@ -17,6 +17,10 @@ def showSignIn():
 def userHome():
 	return render_template('userHome.html')
 
+@app.route('/addWish')
+def addWish():
+	return render_template('addWish.html')
+
 if __name__ == '__main__':
 	app.run()
 
